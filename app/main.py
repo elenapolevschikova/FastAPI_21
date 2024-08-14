@@ -4,8 +4,7 @@
 from fastapi import FastAPI
 from app.routers import category, products
 
-
-app = FastAPI()
+app = FastAPI()  # мы созд. объект на основе класса Flask
 
 
 @app.get("/")
@@ -20,8 +19,8 @@ def main():
     pass
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":  # если мы будем выводить в этом файле main
+    main()     # обращ. к объекту app далее к команде run(запуск этого проекта)
 
 
 
